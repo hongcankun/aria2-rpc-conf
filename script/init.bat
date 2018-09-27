@@ -1,6 +1,4 @@
-@echo off & title Aria2 Init
-@echo | call check
-if errorlevel 1 pause && exit /b %errorlevel%
+@echo off & title Aria2 Init & setlocal
 
 set src=%cd%\..
 set dst=%userprofile%\.aria2\rpc
@@ -15,5 +13,5 @@ for %%s in (%files%) do (
 )
 
 echo.
-echo if you want to run aria2 on current user logging, run auto-run.bat please
+echo if you want to run aria2 on current user logging, please run auto-run.bat
 pause 

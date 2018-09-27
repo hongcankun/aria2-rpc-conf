@@ -1,6 +1,4 @@
-@echo off & title Aria2 Stop
-@echo | call check
-if errorlevel 1 pause && exit /b %errorlevel%
+@echo off & title Aria2 Stop & setlocal
 
 taskkill /f /im aria2c.exe
 pause
