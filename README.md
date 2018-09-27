@@ -1,5 +1,7 @@
 # aria2-rpc-conf
 
+[**English Document**](./README-en.md)
+
 ## 概述
 
 [Aria2](https://aria2.github.io/)是一个轻量级的多协议和多源命令行下载实用程序。 它支持HTTP / HTTPS，FTP，SFTP，BitTorrent和Metalink。 Aria2可以通过内置的JSON-RPC和XML-RPC接口进行操作。
