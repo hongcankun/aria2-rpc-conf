@@ -32,10 +32,10 @@ This project mainly contains the configuration file of the Aria2 RPC server and 
 
 1. `aria2.conf`: Aria2 RPC configuration file.
 2. `script/status.bat`: Check the installation and running status of Aria2.
-3. `script/start.vbs`: Run the Aria2 RPC service in the background, and check the log size of Aria2 before running. If it exceeds `10M`, it will be cleaned up.
-4. `script/start.bat`: Call `start.vbs` to run the Aria2 RPC service in the background and display the running status of Aria2 after startup.
+3. `script/hide-run.vbs`: Run the Aria2 RPC service in the background, and check the log size of Aria2 before running. If it exceeds `10M`, it will be cleaned up.
+4. `script/start.bat`: Check whether Aria2 is already running at first, then call `hide-run.vbs` to start the Aria2 RPC service in the background and display the running status of Aria2 after startup.
 5. `script/stop.bat`: Terminate all Aria2 programs.
-6. `script/restart.bat`: Terminate all Aria2 programs and call `start.vbs` to restart the Aria2 RPC service. After startup, the Aria2 running status is displayed.
+6. `script/restart.bat`: Terminate all Aria2 programs and call `hide-run.vbs` to restart the Aria2 RPC service. After startup, the Aria2 running status is displayed.
 7. `script/init.bat`: Initialize the Aria2 RPC environment, copy the configuration file and all scripts to `~/.aria2/rpc` and create the following files:
    1. `aria2.cookies`: Save the cookie information, see [--load-cookies](https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-load-cookies) and [--save-cookies ](https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-save-cookies).
    2. `aria2.log`: Aria2 log files, see [--log](https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-l) and [--log-level](https://aria2.Github.io/manual/en/html/aria2c.html#cmdoption-log-level).

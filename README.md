@@ -34,10 +34,10 @@ Aria2是基于命令行的下载工具，没有提供GUI来对下载任务进行
 
 1. `aria2.conf`：Aria2 RPC的配置文件。
 2. `script/status.bat`：查看Aria2的安装情况和运行状态。
-3. `script/start.vbs`：后台运行Aria2 RPC服务，运行之前会查看Aria2的日志大小，如果超过`10M`，会进行删除清理。
-4. `script/start.bat`：调用`start.vbs`，后台运行Aria2 RPC服务，启动后显示Aria2的运行状态。
+3. `script/hide-run.vbs`：后台运行Aria2 RPC服务，运行之前会查看Aria2的日志大小，如果超过`10M`，会进行删除清理。
+4. `script/start.bat`：检查Aria2是否已经运行，然后调用`hide-run.vbs`来启动Aria2，启动后显示Aria2的运行状态。
 5. `script/stop.bat`：终止所有Aria2的运行程序。
-6. `script/restart.bat`：终止所有Aria2的运行程序，并调用`start.vbs`来重启Aria2 RPC服务，启动后显示Aria2的运行状态。
+6. `script/restart.bat`：终止所有Aria2的运行程序，并调用`hide-run.vbs`来重启Aria2 RPC服务，启动后显示Aria2的运行状态。
 7. `script/init.bat`：初始化Aria2 RPC环境，复制配置文件和所有脚本到`~/.aria2/rpc`，并创建以下文件：
    1. `aria2.cookies`：保存Aria2运行时的cookies信息，查看 [--load-cookies](https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-load-cookies) 和 [--save-cookies](https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-save-cookies)。
    2. `aria2.log`：Aria2日志文件，查看 [--log](https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-l) 和 [--log-level](https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-log-level)。
