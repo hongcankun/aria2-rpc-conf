@@ -4,7 +4,12 @@
 
 [Aria2](https://aria2.github.io/) is a **lightweight** multi-protocol & multi-source command-line **download utility**. It supports **HTTP/HTTPS**, **FTP**, **SFTP**, **BitTorrent** and **Metalink**. Aria2 can be manipulated via built-in **JSON-RPC** and **XML-RPC** interfaces.
 
-This project provides configuration files to enable Aria2's JSON-RPC function. It also provides script files for configuring the Aria2 RPC environment,  implementing Aria2 RPC server management and auto booting on the Windows platform.
+This project provides configuration file for enabling Aria2's JSON-RPC functionality, as well as script files for the following features on Windows platforms:
+
+1. Configure the Aria2 RPC environment.
+2. Management of Aria2 RPC services.
+3. Auto booting.
+4. Install Aria2.
 
 Before using this project, you need to install Aria2 first. Please check [Official Website](https://aria2.github.io/) for installation, or use [Scoop](https://github.com/lukesampson/scoop) to install it. If Scoop is already installed, you can install Aria2 by executing the following command in CMD:
 
@@ -42,4 +47,5 @@ This project mainly contains the configuration file of the Aria2 RPC server and 
    3. `aria2.serverstat`: Keep the server performance profiles, see [--server-stat-of](https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-server-stat-of),[--server- Stat-if](https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-server-stat-of) and [Server Performance Profile](https://aria2.github.io/manual/en/html/aria2c.html#server-performance-profile).
    4. `aria2.session`: Save the execution status of Aria2, including unfinished or erroneous download tasks, see [--input-file](https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-i), [--save-session](https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-save-session) and [Input File](https://aria2.github.io/manual/en/html/aria2c.html#id2).
 8. `script/auto-run.bat`: Configure whether or not enable auto booting.
+9. `script/install-aria2.bat`: Install aria2.
 

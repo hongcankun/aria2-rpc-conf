@@ -6,7 +6,12 @@
 
 [Aria2](https://aria2.github.io/)是一个轻量级的多协议和多源命令行下载实用程序。 它支持HTTP / HTTPS，FTP，SFTP，BitTorrent和Metalink。 Aria2可以通过内置的JSON-RPC和XML-RPC接口进行操作。
 
-本项目提供配置文件，用于启用Aria2的JSON-RPC功能，同时也提供一些脚本文件，用于在Windows平台下，配置Aria2 RPC环境，实现Aria2 RPC服务器的管理，以及开机自启。
+本项目提供配置文件，用于启用Aria2的JSON-RPC功能，同时也提供一些脚本文件，用于在Windows平台下，提供以下功能：
+
+1. 配置Aria2 RPC环境。
+2. 实现Aria2 RPC服务的管理。
+3. 配置是否开机自启。
+4. 安装Aria2。
 
 在使用本项目之前，需要先安装Aria2，安装方法请查看[官网](https://aria2.github.io/)，或者使用[Scoop](https://github.com/lukesampson/scoop)来进行安装。如果已经安装了Scoop，可以在CMD执行以下命令安装Aria2：
 
@@ -44,3 +49,4 @@ Aria2是基于命令行的下载工具，没有提供GUI来对下载任务进行
    3. `aria2.serverstat`：保存服务器性能状态，查看 [--server-stat-of](https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-server-stat-of)，[--server-stat-if](https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-server-stat-of) 和 [Server Performance Profile](https://aria2.github.io/manual/en/html/aria2c.html#server-performance-profile)。
    4. `aria2.session`：保存Aria2的执行情况，包括未完成或出现错误的下载任务，查看 [--input-file](https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-i)，[--save-session](https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-save-session) 和 [Input File](https://aria2.github.io/manual/en/html/aria2c.html#id2)。
 8. `script/auto-run.bat`：配置是否开机自启。
+9. `script/install-aria2.bat`：安装Aria2。
